@@ -229,6 +229,21 @@
 				<key>layout-id</key>
 				<data>AQAAAA==</data>
 			</dict>
+			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<dict>
+				<key>AAPL,ig-platform-id</key>
+				<data>BgAmFg==</data>
+				<key>AAPL,slot-name</key>
+				<string>iGPU</string>
+				<key>device_type</key>
+				<string>VGA compatible controller</string>
+				<key>framebuffer-fbmem</key>
+				<data>AACQAA==</data>
+				<key>framebuffer-patch-enable</key>
+				<integer>1</integer>
+				<key>framebuffer-stolenmem</key>
+				<data>AAAwAQ==</data>
+			</dict>
 		</dict>
 		<key>Delete</key>
 		<dict/>
