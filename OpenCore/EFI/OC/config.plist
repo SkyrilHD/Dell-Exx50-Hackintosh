@@ -417,7 +417,9 @@
 		<key>ConnectDrivers</key>
 		<true/>
 		<key>Drivers</key>
-		<array/>
+		<array>
+			<string>AudioDxe.efi</string>
+		</array>
 		<key>Input</key>
 		<dict>
 			<key>KeyFiltering</key>
