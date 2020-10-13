@@ -343,6 +343,17 @@
 				<key>model</key>
 				<string>Broadwell-U Audio Controller</string>
 			</dict>
+			<key>PciRoot(0)/Pci(0x4,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Built-in</string>
+				<key>compatible</key>
+				<string>pci8086,1603</string>
+				<key>device_type</key>
+				<string>Signal processing controller</string>
+				<key>model</key>
+				<string>Broadwell-U Processor Thermal Subsystem</string>
+			</dict>
 		</dict>
 		<key>Delete</key>
 		<dict/>
