@@ -310,6 +310,17 @@
 				<key>model</key>
 				<string>Wildcat Point-LP USB EHCI Controller</string>
 			</dict>
+			<key>PciRoot(0)/Pci(0x1f,0x2)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Built-in</string>
+				<key>compatible</key>
+				<string>pci8086,9c83</string>
+				<key>device_type</key>
+				<string>SATA Controller</string>
+				<key>model</key>
+				<string>Wildcat Point-LP SATA Controller [AHCI Mode]</string>
+			</dict>
 		</dict>
 		<key>Delete</key>
 		<dict/>
