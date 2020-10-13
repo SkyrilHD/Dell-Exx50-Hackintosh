@@ -255,6 +255,17 @@
 				<key>model</key>
 				<string>O2 Micro, Inc. OZ777FFXJM SD/MMC Card Reader Controller</string>
 			</dict>
+			<key>PciRoot(0)/Pci(0x14,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Built-in</string>
+				<key>compatible</key>
+				<string>pci8086,9cb1</string>
+				<key>device_type</key>
+				<string>USB Controller</string>
+				<key>model</key>
+				<string>Wildcat Point-LP USB xHCI Controller</string>
+			</dict>
 		</dict>
 		<key>Delete</key>
 		<dict/>
