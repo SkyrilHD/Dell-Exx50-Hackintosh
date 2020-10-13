@@ -266,6 +266,17 @@
 				<key>model</key>
 				<string>Wildcat Point-LP USB xHCI Controller</string>
 			</dict>
+			<key>PciRoot(0)/Pci(0x16,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Built-in</string>
+				<key>compatible</key>
+				<string>pci8086,9cba</string>
+				<key>device_type</key>
+				<string>Communication Controller</string>
+				<key>model</key>
+				<string>Wildcat Point-LP MEI Controller #1</string>
+			</dict>
 		</dict>
 		<key>Delete</key>
 		<dict/>
