@@ -288,6 +288,17 @@
 				<key>model</key>
 				<string>Wildcat Point-LP KT Controller</string>
 			</dict>
+			<key>PciRoot(0)/Pci(0x1c,0x3)/Pci(0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>WiFi</string>
+				<key>compatible</key>
+				<string>pci8086,095a</string>
+				<key>device_type</key>
+				<string>AirPort</string>
+				<key>model</key>
+				<string>Intel Dual Band Wireless-AC 7265</string>
+			</dict>
 		</dict>
 		<key>Delete</key>
 		<dict/>
