@@ -299,6 +299,17 @@
 				<key>model</key>
 				<string>Intel Dual Band Wireless-AC 7265</string>
 			</dict>
+			<key>PciRoot(0)/Pci(0x1d,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Built-in</string>
+				<key>compatible</key>
+				<string>pci8086,9ca6</string>
+				<key>device_type</key>
+				<string>USB Controller</string>
+				<key>model</key>
+				<string>Wildcat Point-LP USB EHCI Controller</string>
+			</dict>
 		</dict>
 		<key>Delete</key>
 		<dict/>
