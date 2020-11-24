@@ -18,7 +18,7 @@ WiFi | Intel Dual Band Wireless-AC 7265 (only Bluetooth does work with this EFI)
 GSM/LTE | Sierra Wireless AirPrime EM7305 (DW5809e)
 Software | macOS 11.0 Big Sur
 
-## EFI Compability list:
+## EFI Compatibility list:
 
 Exx50 model | Supported? | Additional notes
 :----------: | :----------: | :----------:
