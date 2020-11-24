@@ -26,10 +26,10 @@ Exx50 model | Supported? | Additional notes
 E7450 | _Yes_ | -/-
 E7250 | **Yes** | -/-
 E5550 | _Yes_ | 1
-E5450 | _Yes_ | 
-E5250 | _Yes_ | 
+E5450 | _Yes_ | -/-
+E5250 | _Yes_ | -/-
 E3550 | _Yes_ | 1
-E3450 | _Yes_ | 
+E3450 | _Yes_ | -/-
 
 Bold: confirmed working
 
