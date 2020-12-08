@@ -998,6 +998,8 @@
 				<string>UEFI Shell</string>
 				<key>Path</key>
 				<string>OpenShell.efi</string>
+				<key>RealPath</key>
+				<false/>
 			</dict>
 		</array>
 	</dict>
