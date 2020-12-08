@@ -1000,6 +1000,8 @@
 				<string>OpenShell.efi</string>
 				<key>RealPath</key>
 				<false/>
+				<key>TextMode</key>
+				<false/>
 			</dict>
 		</array>
 	</dict>
