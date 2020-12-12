@@ -1160,7 +1160,7 @@
 			<key>AudioSupport</key>
 			<false/>
 			<key>MinimumVolume</key>
-			<integer>20</integer>
+			<integer>0</integer>
 			<key>PlayChime</key>
 			<string>Auto</string>
 			<key>SetupDelay</key>
