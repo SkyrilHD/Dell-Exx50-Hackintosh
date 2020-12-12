@@ -1166,7 +1166,7 @@
 			<key>SetupDelay</key>
 			<integer>0</integer>
 			<key>VolumeAmplifier</key>
-			<integer>0</integer>
+			<integer>142</integer>
 		</dict>
 		<key>ConnectDrivers</key>
 		<true/>
