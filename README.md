@@ -22,7 +22,7 @@ Software | macOS 11.0 Big Sur
 
 Exx50 model | Supported? | Additional notes
 :----------: | :----------: | :----------:
-13 7350 | _No_ | uses Core M-series
+13 7350 | _Yes_ | 2
 E7450 | _Yes_ | -/-
 E7250 | **Yes** | -/-
 E5550 | _Yes_ | 1
@@ -36,6 +36,8 @@ Bold: confirmed working
 Italic: not confirmed
 
 1: disable your dGPU (if you have one) with the SSDT
+
+2: make sure to change your SMBIOS to MacBook8,1
 
 Disclaimer: The list was created based on the specs. Please correct my mistakes
 
