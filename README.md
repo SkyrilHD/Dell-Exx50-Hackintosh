@@ -59,6 +59,35 @@ Copy the EFI folder to your EFI partition... That's it.
 - sleep works
 - Bluetooth is working too and can also be disabled
 
+## Recommended BIOS settings
+<details>
+  <summary>Expand BIOS settings</summary>
+  
+**General:**
+
+* Boot sequence -> Boot List Option: UEFI
+        
+**System configuration:**
+        
+* Parallel Port: Disabled
+* Serial Port: Disabled
+* SATA Operation: AHCI
+        
+**Security:**
+
+* TPM Security: Off
+ 
+**Secure Boot:**
+
+* Secure Boot: Disabled
+  
+**Power Management:**
+
+* Wake on LAN/WLAN: Disabled
+* USB Wake Support: Off
+
+</details>
+
 ## How to Install macOS Big Sur
 
 There are two ways you can install Big Sur:
