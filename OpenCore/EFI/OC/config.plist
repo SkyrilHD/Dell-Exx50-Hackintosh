@@ -274,6 +274,8 @@
 	</dict>
 	<key>Booter</key>
 	<dict>
+		<key>MmioWhitelist</key>
+		<array/>
 		<key>Patch</key>
 		<array>
 			<dict>
@@ -301,8 +303,6 @@
 				<integer>0</integer>
 			</dict>
 		</array>
-		<key>MmioWhitelist</key>
-		<array/>
 		<key>Quirks</key>
 		<dict>
 			<key>AllowRelocationBlock</key>
