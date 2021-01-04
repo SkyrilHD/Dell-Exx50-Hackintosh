@@ -13,10 +13,10 @@ Model | Latitude E7250
 CPU | Intel Core i5-5300U
 GPU | Intel HD Graphics 5500
 RAM | 16GB DDR3 1600Mhz
-Storage | SAMSUNG SSD PM871 mSATA 128GB
+Storage | SK hynix SC210 mSATA 128GB
 WiFi | Intel Dual Band Wireless-AC 7265 (only Bluetooth does work with this EFI)
 GSM/LTE | Sierra Wireless AirPrime EM7305 (DW5809e)
-Software | macOS 11.0 Big Sur
+Software | macOS 11.1 Big Sur
 
 ## EFI Compatibility list:
 
