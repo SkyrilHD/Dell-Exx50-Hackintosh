@@ -23,7 +23,7 @@ Software | macOS 11.0 Big Sur
 Exx50 model | Supported? | Additional notes
 :----------: | :----------: | :----------:
 13 7350 | _Yes_ | 2
-E7450 | _Yes_ | -/-
+E7450 | **Yes** | -/-
 E7250 | **Yes** | -/-
 E5550 | _Yes_ | 1
 E5450 | _Yes_ | -/-
