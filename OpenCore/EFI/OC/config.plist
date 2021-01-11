@@ -1113,7 +1113,7 @@
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemMemoryStatus</key>
-			<string>Auto</string>
+			<string>Upgradable</string>
 			<key>SystemProductName</key>
 			<string>MacBookPro12,1</string>
 			<key>SystemSerialNumber</key>
