@@ -1102,6 +1102,8 @@
 		<dict>
 			<key>AdviseWindows</key>
 			<false/>
+			<key>MaxBIOSVersion</key>
+			<false/>
 			<key>MLB</key>
 			<string>C026249024NGDVVA8</string>
 			<key>ProcessorType</key>
