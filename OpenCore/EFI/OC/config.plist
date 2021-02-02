@@ -901,6 +901,8 @@
 			<false/>
 			<key>LauncherOption</key>
 			<string>Full</string>
+			<key>LauncherPath</key>
+			<string>Default</string>
 			<key>PickerAttributes</key>
 			<integer>17</integer>
 			<key>PickerAudioAssist</key>
