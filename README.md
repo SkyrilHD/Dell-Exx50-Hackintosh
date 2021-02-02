@@ -35,7 +35,7 @@ Bold: confirmed working
 
 Italic: not confirmed
 
-1: disable your dGPU (if you have one) with the SSDT
+1: disable your dGPU (if you have one) with a SSDT
 
 2: make sure to change your SMBIOS to MacBook8,1
 
