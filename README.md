@@ -111,10 +111,10 @@ Thanks to:
 
 - me (for wasting my time writing this and providing fixes)
 - acidanthera (for making an awesome bootloader)
-- Harvé (for suggesting to inject property in Clover)
-- DrHurt (for supporting our ALPS Trackpad)
-- zxystd (for fixing the Bluetooth issue and Intel WiFi card)
 - dortania (with their troubleshooting guide, I was able to fix sleep)
+- DrHurt (for supporting our ALPS Trackpad)
+- Harvé (for suggesting to inject property in Clover)
+- zxystd (for fixing the Bluetooth issue and Intel WiFi card)
 
 
 All this was written on an E7250 with Big Sur installed :D
