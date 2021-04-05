@@ -1291,6 +1291,8 @@
 		<dict>
 			<key>AppleEvent</key>
 			<string>Builtin</string>
+			<key>CustomDelays</key>
+			<string>Auto</string>
 		</dict>
 		<key>Audio</key>
 		<dict>
