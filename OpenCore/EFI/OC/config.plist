@@ -1295,6 +1295,8 @@
 			<string>Auto</string>
 			<key>KeyInitialDelay</key>
 			<integer>0</integer>
+			<key>KeySubsequentDelay</key>
+			<integer>5</integer>
 		</dict>
 		<key>Audio</key>
 		<dict>
