@@ -1293,6 +1293,8 @@
 			<string>Builtin</string>
 			<key>CustomDelays</key>
 			<string>Auto</string>
+			<key>KeyInitialDelay</key>
+			<integer>0</integer>
 		</dict>
 		<key>Audio</key>
 		<dict>
