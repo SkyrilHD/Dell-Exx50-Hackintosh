@@ -78,6 +78,8 @@
 			<dict>
 				<key>Base</key>
 				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 				<key>Comment</key>
 				<string>change Method(GPRW,2,N) to XPRW, pair with SSDT-GPRW.aml</string>
 				<key>Count</key>
@@ -106,6 +108,8 @@
 			<dict>
 				<key>Base</key>
 				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 				<key>Comment</key>
 				<string>HPET _CRS to XCRS Rename</string>
 				<key>Count</key>
@@ -134,6 +138,8 @@
 			<dict>
 				<key>Base</key>
 				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 				<key>Comment</key>
 				<string>RTC IRQ 8 Patch</string>
 				<key>Count</key>
@@ -162,6 +168,8 @@
 			<dict>
 				<key>Base</key>
 				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 				<key>Comment</key>
 				<string>TIMR IRQ 0 Patch</string>
 				<key>Count</key>
@@ -190,6 +198,8 @@
 			<dict>
 				<key>Base</key>
 				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 				<key>Comment</key>
 				<string>OSID to XSID</string>
 				<key>Count</key>
@@ -218,6 +228,8 @@
 			<dict>
 				<key>Base</key>
 				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 				<key>Comment</key>
 				<string>_OSI to XOSI</string>
 				<key>Count</key>
@@ -246,6 +258,8 @@
 			<dict>
 				<key>Base</key>
 				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 				<key>Comment</key>
 				<string>BRT6 to XRT6</string>
 				<key>Count</key>
