@@ -1,6 +1,7 @@
 # Dell Exx50 Hackintosh
 
 [![OpenCore Version](https://img.shields.io/badge/OpenCore-0.6.8-green.svg)](https://github.com/SkyrilHD/Dell-Exx50-Hackintosh/)
+[![GitHub release](https://img.shields.io/github/release/SkyrilHD/Dell-Exx50-Hackintosh.svg)](https://github.com/SkyrilHD/Dell-Exx50-Hackintosh/releases/)
 ### This repo contains all the fixes for Exx50 on macOS Big Sur.
 
 ### I need a confirmation if the EFI is working on other models, so I can complete my list. Thanks!
