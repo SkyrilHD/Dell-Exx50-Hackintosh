@@ -1287,6 +1287,8 @@
 			<key>MinVersion</key>
 			<integer>0</integer>
 		</dict>
+		<key>AppleInput</key>
+		<dict/>
 		<key>Audio</key>
 		<dict>
 			<key>AudioCodec</key>
