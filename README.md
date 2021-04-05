@@ -6,7 +6,7 @@
 
 ### This repo contains all the fixes for Exx50 on macOS Big Sur.
 
-### I need a confirmation if the EFI is working on other models, so I can complete my list. Thanks!
+### I need a [confirmation](https://github.com/SkyrilHD/Dell-Exx50-Hackintosh/discussions/2) if the EFI is working on other models, so I can complete my list. Thanks!
 
 I noticed that my E7250 has nearly the same specs as other Exx50 models, so this repo was created. This will NOT replace the E7250 repo.
 
