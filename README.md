@@ -18,7 +18,7 @@ CPU | Intel Core i5-5300U
 GPU | Intel HD Graphics 5500
 RAM | 16GB DDR3 1600Mhz
 Storage | SK hynix SC210 mSATA 128GB
-WiFi | Intel Dual Band Wireless-AC 7265 (only Bluetooth does work with this EFI)
+WiFi | Intel Dual Band Wireless-AC 7265
 GSM/LTE | Sierra Wireless AirPrime EM7305 (DW5809e)
 Software | macOS 11.2.3 Big Sur
 
