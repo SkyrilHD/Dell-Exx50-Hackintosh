@@ -63,6 +63,14 @@ Go to the [Releases](https://github.com/SkyrilHD/Dell-Exx50-Hackintosh/releases/
 - sleep works
 - Bluetooth is working too and can also be disabled
 
+## Graphical glitches in macOS
+
+There are two ways to fix the horizontal glitches (as seen [here](https://github.com/newyb/Something-useful-of-E7250/blob/main/BUG2%20at%20sign.jpg)) in macOS.
+
+1. (Recommended) Enable 'Enable Legacy Option ROMs' in the BIOS by clicking General>Advanced Boot Options. [Here](https://supportkb.dell.com/img/ka02R000000oLv9QAE/ka02R000000oLv9QAE_en_US_2.jpeg) is a picture of that option.
+
+2. If you want to use pure UEFI as a workaround, you can use [one-key-hidpi](https://github.com/xzhih/one-key-hidpi). Download and run the code and select 'Enable HIDPI (with EDID)'. Then restart your computer and the glitches should be resolved.
+
 ## Recommended BIOS settings
 <details>
   <summary>Expand BIOS settings</summary>
@@ -117,7 +125,9 @@ Thanks to:
 - acidanthera (for making an awesome bootloader)
 - dortania (with their troubleshooting guide, I was able to fix sleep)
 - DrHurt (for supporting our ALPS Trackpad)
+- emrah7celik (for providing a guide on how to fix the glitches in macOS with pure UEFI)
 - Harvé (for suggesting to inject property in Clover)
+- hickorysb (for confirming the fix for glitches with Legacy Option ROMs)
 - zxystd (for fixing the Bluetooth issue and Intel WiFi card)
 
 
