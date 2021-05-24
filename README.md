@@ -81,6 +81,10 @@ If you experience no internet with AirportItlwm, I suggest switching to itlwm an
 
 For touchscreen models, I also added VoodooI2C to take advantage of the touchscreen display. However, it is disabled. If you want to use it, you have to activate all VoodooI2C-related kexts in the config!
 
+## USB
+
+As of macOS 11.3, the XhciPortLimit quirk is broken in OpenCore. To avoid any random boot loops, disable the XhciPortLimit quirk. I also added USBMap.kext which I am using on my E7250. Enable the kext and the ACPI Patch called "EHC1 to EH01" and you should be good to go. However, I always recommend mapping the USB ports yourself as every system can be different! You can follow the simple guide from dortania [here](https://dortania.github.io/OpenCore-Post-Install/usb/). By enabling, USBMap, you should also remove USBInjectAll and FakePCIID.
+
 ## Recommended BIOS settings
 <details>
   <summary>Expand BIOS settings</summary>
