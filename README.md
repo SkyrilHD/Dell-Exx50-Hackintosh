@@ -77,6 +77,10 @@ Starting with v2.3, AirportItlwm is included in the EFI but disabled to ensure s
 
 If you experience no internet with AirportItlwm, I suggest switching to itlwm and see if it works there.
 
+## Touchscreen
+
+For touchscreen models, I also added VoodooI2C to take advantage of the touchscreen display. However, it is disabled. If you want to use it, you have to activate all VoodooI2C-related kexts in the config!
+
 ## Recommended BIOS settings
 <details>
   <summary>Expand BIOS settings</summary>
