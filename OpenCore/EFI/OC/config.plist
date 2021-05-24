@@ -56,19 +56,19 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-ACOS-ACSE.aml</string>
+				<string>SSDT-BRT6.aml</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-ACOS-ACSE.aml</string>
+				<string>SSDT-BRT6.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-BRT6.aml</string>
+				<string>SSDT-ACOS-ACSE.aml</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-BRT6.aml</string>
+				<string>SSDT-ACOS-ACSE.aml</string>
 			</dict>
 		</array>
 		<key>Delete</key>
