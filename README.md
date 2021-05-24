@@ -71,6 +71,12 @@ There are two ways to fix the horizontal glitches (as seen [here](https://github
 
 2. If you want to use pure UEFI as a workaround, you can use [one-key-hidpi](https://github.com/xzhih/one-key-hidpi). Download and run the code and select 'Enable HIDPI (with EDID)'. Then restart your computer and the glitches should be resolved.
 
+## Intel WiFi
+
+Starting with v2.3, AirportItlwm is included in the EFI but disabled to ensure stability. To enable Intel WiFi, enable it in the config. The EFI will only have stable versions of AirportItlwm. So if you want to experiment with Intel WiFi, you can do so by visiting the [itlwm repo](https://github.com/OpenIntelWireless/itlwm) and downloading the latest alpha build. Stability can be much worse, so use with caution! Also, do not forget to enable IntelBluetooth to make Bluetooth more stable!
+
+If you experience no internet with AirportItlwm, I suggest switching to itlwm and see if it works there.
+
 ## Recommended BIOS settings
 <details>
   <summary>Expand BIOS settings</summary>
