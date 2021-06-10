@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  release:
+    types: [published]
+
+env:
+  PROJECT_TYPE: KEXT
+
+jobs:
+  build:
+    name: Build
+    runs-on: macos-latest
+    env:
+      JOB_TYPE: BUILD
+    steps:
+      - name: Build
+        uses: actions/checkout@v2
+      - run: echo "TAG_VER=${GITHUB_REF/refs\/tags\/v/}" >> $GITHUB_ENV
+      - run: mkdir Output && zip --exclude '*.git*' --exclude '*.github*' --exclude '*Output*' -r -X "Output/${{ github.event.repository.name }}-${TAG_VER}.zip" .  
+      
+      - name: Upload to Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: Artifacts
+          path: Output/*.zip
+          
+      - name: Upload to Release
+        if: github.event_name == 'release'
+        uses: svenstaro/upload-release-action@e74ff71f7d8a4c4745b560a485cc5fdb9b5b999d
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: Output/*.zip
+          tag: ${{ github.ref }}
+          file_glob: true
