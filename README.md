@@ -27,12 +27,12 @@ Software | macOS 11.3.1 Big Sur
 Exx50 model | Supported? | Additional notes
 :----------: | :----------: | :----------:
 13 7350 | _Yes_ | 2
+3550 2015 | **Yes** | 3
 E7450 | **Yes** | -/-
 E7250 | **Yes** | -/-
 E5550 | **Yes** | 1
 E5450 | **Yes** | -/-
 E5250 | _Yes_ | -/-
-E3550 | _Yes_ | 1
 E3450 | _Yes_ | -/-
 
 Bold: confirmed working
@@ -42,6 +42,8 @@ Italic: not confirmed
 1: disable your dGPU (if you have one) with a SSDT
 
 2: make sure to change your SMBIOS to MacBook8,1
+
+3: Follow [this](https://github.com/SkyrilHD/Dell-Exx50-Hackintosh/issues/19#issuecomment-865314466) for full functionallity 
 
 Disclaimer: The list was created based on the specs. Please correct my mistakes
 
