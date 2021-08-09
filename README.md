@@ -1,7 +1,7 @@
 # Dell Exx50 Hackintosh
 
 [![OpenCore Version](https://img.shields.io/badge/OpenCore-0.7.2-green.svg)](https://github.com/SkyrilHD/Dell-Exx50-Hackintosh/)
-[![GitHub release](https://img.shields.io/github/release/SkyrilHD/Dell-Exx50-Hackintosh.svg)](https://github.com/SkyrilHD/Dell-Exx50-Hackintosh/releases/)
+[![GitHub release](https://img.shields.io/github/tag/SkyrilHD/Dell-Exx50-Hackintosh.svg)](https://github.com/SkyrilHD/Dell-Exx50-Hackintosh/releases/)
 [![GitHub issues](https://img.shields.io/github/issues/SkyrilHD/Dell-Exx50-Hackintosh.svg)](https://github.com/SkyrilHD/Dell-Exx50-Hackintosh/issues/)
 
 ### This repo contains all the fixes for Exx50 on macOS Big Sur.
