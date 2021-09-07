@@ -522,6 +522,8 @@
 				<data>AAAwAQ==</data>
 				<key>enable-backlight-smoother</key>
 				<data>AQAAAA==</data>
+				<key>backlight-smoother-steps</key>
+				<data>IAAAAA==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x3,0x0)</key>
 			<dict>
