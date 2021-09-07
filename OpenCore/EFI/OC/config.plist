@@ -526,6 +526,8 @@
 				<data>IAAAAA==</data>
 				<key>backlight-smoother-interval</key>
 				<data>BAAAAA==</data>
+				<key>backlight-smoother-threshold</key>
+				<data>AAAAAA==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x3,0x0)</key>
 			<dict>
