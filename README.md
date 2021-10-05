@@ -20,7 +20,7 @@ RAM | 16GB DDR3 1600Mhz
 Storage | SK hynix SC210 mSATA 128GB
 WiFi | Intel Dual Band Wireless-AC 7265
 GSM/LTE | Sierra Wireless AirPrime EM7305 (DW5809e)
-Software | macOS 11.3.1 Big Sur
+Software | macOS 11.5 Big Sur
 
 ## EFI Compatibility list
 
