@@ -1411,6 +1411,8 @@
 			<dict>
 				<key>Path</key>
 				<string>OpenRuntime.efi</string>
+				<key>Comment</key>
+				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>Arguments</key>
@@ -1423,13 +1425,19 @@
 				<true/>
 				<key>Arguments</key>
 				<string></string>
+				<key>Comment</key>
+				<string></string>
 			</dict>
 			<dict>
 				<key>Path</key>
 				<string>OpenHfsPlus.efi</string>
+				<key>Comment</key>
+				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
 				<string></string>
 			</dict>
 		</array>
