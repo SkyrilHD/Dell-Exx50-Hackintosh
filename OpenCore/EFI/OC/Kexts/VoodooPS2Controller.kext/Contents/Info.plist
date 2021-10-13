@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>16E154a</string>
+	<string>19H1417</string>
 	<key>CFBundleExecutable</key>
 	<string>VoodooPS2Controller</string>
 	<key>CFBundleGetInfoString</key>
-	<string>6.0.0, Copyright Apple Computer, Inc. 2000-2003, David Elliot 2007, RehabMan 2012-2013</string>
+	<string>1.0.3, Copyright Apple Computer, Inc. 2000-2003, David Elliot 2007, RehabMan 2012-2013</string>
 	<key>CFBundleIdentifier</key>
-	<string>org.rehabman.voodoo.driver.PS2Controller</string>
+	<string>com.skyrilhd.PS2Controller</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>6.0.0</string>
+	<string>1.0.3</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleSupportedPlatforms</key>
@@ -25,27 +25,29 @@
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>6.0.0</string>
+	<string>1.0.3</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>8B62</string>
+	<string>12B45b</string>
+	<key>DTPlatformName</key>
+	<string>macosx</string>
 	<key>DTPlatformVersion</key>
-	<string>GM</string>
+	<string>11.0</string>
 	<key>DTSDKBuild</key>
-	<string>16B2649</string>
+	<string>20A2408</string>
 	<key>DTSDKName</key>
-	<string>macosx10.12</string>
+	<string>macosx11.0</string>
 	<key>DTXcode</key>
-	<string>0810</string>
+	<string>1220</string>
 	<key>DTXcodeBuild</key>
-	<string>8B62</string>
+	<string>12B45b</string>
 	<key>IOKitPersonalities</key>
 	<dict>
 		<key>ACPI PS/2 Nub</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>org.rehabman.voodoo.driver.PS2Controller</string>
+			<string>com.skyrilhd.PS2Controller</string>
 			<key>IOClass</key>
 			<string>AppleACPIPS2Nub</string>
 			<key>IONameMatch</key>
@@ -66,7 +68,7 @@
 		<key>ApplePS2Controller</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>org.rehabman.voodoo.driver.PS2Controller</string>
+			<string>com.skyrilhd.PS2Controller</string>
 			<key>IOClass</key>
 			<string>ApplePS2Controller</string>
 			<key>IONameMatch</key>
@@ -134,13 +136,15 @@
 				</dict>
 			</dict>
 			<key>RM,Build</key>
-			<string>Release-</string>
+			<string>Release-runner</string>
 			<key>RM,Version</key>
-			<string>VoodooPS2Controller 6.0.0</string>
+			<string>VoodooPS2Controller 1.0.3</string>
 		</dict>
 	</dict>
+	<key>LSMinimumSystemVersion</key>
+	<string>10.13</string>
 	<key>OSBundleCompatibleVersion</key>
-	<string>2.8.15</string>
+	<string>1.0.0</string>
 	<key>OSBundleLibraries</key>
 	<dict>
 		<key>com.apple.iokit.IOACPIFamily</key>
@@ -158,7 +162,5 @@
 	</dict>
 	<key>OSBundleRequired</key>
 	<string>Console</string>
-	<key>Source Code</key>
-	<string>https://github.com/RehabMan/OS-X-Voodoo-PS2-Controller</string>
 </dict>
 </plist>
