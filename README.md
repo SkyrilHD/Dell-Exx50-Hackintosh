@@ -63,7 +63,7 @@ Go to the [Releases](https://github.com/SkyrilHD/Dell-Exx50-Hackintosh/releases/
 - brightness control now works via F11/F12
 - Apple's audio driver as main
 - sleep works
-- Bluetooth is working too and can also be disabled
+- Bluetooth works, but cannot be activated after deactivating it
 
 ## Graphical glitches in macOS
 
