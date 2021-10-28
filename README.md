@@ -130,7 +130,7 @@ If you want an OOTB-WiFi: You need to change your WiFi card in order for your in
 
 ## Screenshot
 
-![About this Mac](https://user-images.githubusercontent.com/28839925/95805006-9d98d000-0d04-11eb-80f5-4d8c385f0cee.png)
+![About this Mac](https://user-images.githubusercontent.com/28839925/137376042-5502b29d-ef16-4ff2-8c92-8998c46662e1.png)
 
 
 ## Credits
