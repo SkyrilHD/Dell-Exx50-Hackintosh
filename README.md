@@ -85,7 +85,7 @@ For touchscreen models, I also added VoodooI2C to take advantage of the touchscr
 
 ## USB
 
-As of macOS 11.3, the XhciPortLimit quirk is broken in OpenCore. To avoid any random boot loops, disable the XhciPortLimit quirk. I also added USBMap.kext which I am using on my E7250. Enable the kext and the ACPI Patch called "EHC1 to EH01" and you should be good to go. However, I always recommend mapping the USB ports yourself as every system can be different! You can follow the simple guide from dortania [here](https://dortania.github.io/OpenCore-Post-Install/usb/). By enabling, USBMap, you should also remove USBInjectAll and FakePCIID.
+If you experience a USB port not working or you have issues with it, the result would be since this EFI uses a USBMap of E7250. You need to map your USB by following this [issue](https://github.com/SkyrilHD/Dell-Exx50-Hackintosh/issues/28). It would be very helpful to post a USBMap as pull request or on the issue page, so I can add it to the project.
 
 ## Recommended BIOS settings
 <details>
