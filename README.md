@@ -4,7 +4,7 @@
 [![GitHub release](https://img.shields.io/github/tag/SkyrilHD/Dell-Exx50-Hackintosh.svg)](https://github.com/SkyrilHD/Dell-Exx50-Hackintosh/releases/)
 [![GitHub issues](https://img.shields.io/github/issues/SkyrilHD/Dell-Exx50-Hackintosh.svg)](https://github.com/SkyrilHD/Dell-Exx50-Hackintosh/issues/)
 
-### This repo contains all the fixes for Exx50 on macOS Big Sur.
+### This repo contains all the fixes for Exx50 on macOS Monterey.
 
 ### I need a [confirmation](https://github.com/SkyrilHD/Dell-Exx50-Hackintosh/discussions/2) if the EFI is working on other models, so I can complete my list. Thanks!
 
@@ -147,4 +147,4 @@ Thanks to:
 - zxystd (for fixing the Bluetooth issue and Intel WiFi card)
 
 
-All this was written on an E7250 with Big Sur installed :D
+All this was written on an E7250 with Monterey installed :D
