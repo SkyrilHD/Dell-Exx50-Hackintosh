@@ -41,7 +41,7 @@ Italic: not confirmed
 
 1: disable your dGPU (if you have one) with a SSDT
 
-2: make sure to change your SMBIOS to MacBook8,1
+2: MacBook8,1 is not supported anymore, so use SMBIOS that comes with this EFI
 
 3: Follow [this](https://github.com/SkyrilHD/Dell-Exx50-Hackintosh/issues/19#issuecomment-865314466) for full functionallity 
 
