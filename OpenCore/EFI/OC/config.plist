@@ -384,7 +384,7 @@
 			<key>ForceBooterSignature</key>
 			<false/>
 			<key>ForceExitBootServices</key>
-			<false/>
+			<true/>
 			<key>ProtectMemoryRegions</key>
 			<false/>
 			<key>ProtectSecureBoot</key>
