@@ -1451,7 +1451,7 @@
 			<key>KeySupportMode</key>
 			<string>Auto</string>
 			<key>KeySwap</key>
-			<true/>
+			<false/>
 			<key>PointerSupport</key>
 			<false/>
 			<key>PointerSupportMode</key>
