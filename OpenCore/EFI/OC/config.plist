@@ -1542,7 +1542,7 @@
 			<key>EnableVmx</key>
 			<false/>
 			<key>ExitBootServicesDelay</key>
-			<integer>0</integer>
+			<integer>3000</integer>
 			<key>ForgeUefiSupport</key>
 			<false/>
 			<key>ForceOcWriteFlash</key>
