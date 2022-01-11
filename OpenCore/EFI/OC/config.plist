@@ -1394,6 +1394,8 @@
 			<true/>
 			<key>DisconnectHda</key>
 			<false/>
+			<key>MaximumGain</key>
+			<integer>0</integer>
 			<key>PlayChime</key>
 			<string>Auto</string>
 			<key>ResetTrafficClass</key>
