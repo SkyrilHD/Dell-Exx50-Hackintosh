@@ -1392,8 +1392,6 @@
 			<integer>1</integer>
 			<key>AudioSupport</key>
 			<true/>
-			<key>MinimumVolume</key>
-			<integer>0</integer>
 			<key>PlayChime</key>
 			<string>Auto</string>
 			<key>ResetTrafficClass</key>
