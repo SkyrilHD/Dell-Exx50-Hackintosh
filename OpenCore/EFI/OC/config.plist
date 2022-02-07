@@ -1243,8 +1243,6 @@
 				<integer>0</integer>
 				<key>SystemAudioVolume</key>
 				<data>EA==</data>
-				<key>SystemAudioVolumeDB</key>
-				<data>4g==</data>
 				<key>boot-args</key>
 				<string>-wegnoegpu</string>
 				<key>csr-active-config</key>
