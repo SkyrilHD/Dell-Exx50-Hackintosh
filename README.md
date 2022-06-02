@@ -55,16 +55,6 @@ Everything...
 
 Go to the [Releases](https://github.com/SkyrilHD/Dell-Exx50-Hackintosh/releases/) page of this repo and download the latest release. Then, copy the EFI folder to your EFI partition... That's it.
 
-## What to expect
-
-- Works really good
-- no Verbose (Apple Logo)
-- little glitches at boot (Graphics Driver loads)
-- brightness control now works via F11/F12
-- Apple's audio driver as main
-- sleep works
-- Bluetooth works and can be disabled
-
 ## Graphical glitches in macOS
 
 There are two ways to fix the horizontal glitches (as seen [here](https://github.com/newyb/Something-useful-of-E7250/blob/main/BUG2%20at%20sign.jpg)) in macOS.
