@@ -79,6 +79,8 @@ Starting with v2.3, AirportItlwm is included in the EFI but disabled to ensure s
 
 If you experience no internet with AirportItlwm, I suggest switching to itlwm and see if it works there.
 
+Since Monterey, the Bluetooth implementation has changed and therefore causes issues such as: Bluetooth will be broken after sleep. As a workaround, typing the following command in Terminal may fix this issue: `sudo killall -9 bluetoothd BlueTool`
+
 If you want Continuity features: Buy a Broadcom card on eBay or your trusted website. You can check the Dortania buyers guide to see which card is the better option: [Link](https://dortania.github.io/Wireless-Buyers-Guide/)
 
 ## Touchscreen
