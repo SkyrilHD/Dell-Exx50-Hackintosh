@@ -139,6 +139,7 @@ Thanks to:
 
 - me (for wasting my time writing this and providing fixes)
 - acidanthera (for making an awesome bootloader)
+- adyrosebrigg (for help and testing USB and dimmed screen on Windows)
 - dortania (with their troubleshooting guide, I was able to fix sleep)
 - DrHurt (for supporting our ALPS Trackpad)
 - emrah7celik (for providing a guide on how to fix the glitches in macOS with pure UEFI)
