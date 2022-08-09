@@ -1487,6 +1487,8 @@
 				<string></string>
 				<key>Enabled</key>
 				<true/>
+				<key>LoadEarly</key>
+				<false/>
 				<key>Path</key>
 				<string>ToggleSipEntry.efi</string>
 			</dict>
