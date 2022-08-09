@@ -32,7 +32,7 @@ E7450 | **Yes** | -/-
 E7250 | **Yes** | -/-
 E5550 | **Yes** | 1
 E5450 | **Yes** | -/-
-E5250 | _Yes_ | -/-
+E5250 | **Yes** | -/-
 E3450 | _Yes_ | -/-
 
 Bold: confirmed working
