@@ -1463,6 +1463,8 @@
 				<string></string>
 				<key>Enabled</key>
 				<true/>
+				<key>LoadEarly</key>
+				<false/>
 				<key>Path</key>
 				<string>ext4_x64.efi</string>
 			</dict>
