@@ -57,11 +57,23 @@ Go to the [Releases](https://github.com/SkyrilHD/Dell-Exx50-Hackintosh/releases/
 
 ## Graphical glitches in macOS
 
-There are two ways to fix the horizontal glitches (as seen [here](https://github.com/newyb/Something-useful-of-E7250/blob/main/BUG2%20at%20sign.jpg)) in macOS.
+There are three ways to fix the horizontal glitches (as seen [here](https://github.com/newyb/Something-useful-of-E7250/blob/main/BUG2%20at%20sign.jpg)) in macOS.
 
 1. (Recommended) Enable 'Enable Legacy Option ROMs' in the BIOS by clicking General>Advanced Boot Options. [Here](https://supportkb.dell.com/img/ka02R000000oLv9QAE/ka02R000000oLv9QAE_en_US_2.jpeg) is a picture of that option.
 
 2. If you want to use pure UEFI as a workaround, you can use [one-key-hidpi](https://github.com/xzhih/one-key-hidpi). Download and run the code and select 'Enable HIDPI (with EDID)'. Then restart your computer and the glitches should be resolved.
+
+3. Patching Display EDID [WIP]
+
+First we need to download these three Applications: [Hackintool](https://github.com/headkaze/Hackintool/releases), [AWEDIDEditor](https://www.analogway.com/files/uploads/produit/download/en/aw_edideditor_setup_2_00_13_macos.zip) and [HexFiend](https://github.com/HexFiend/HexFiend/releases)
+
+- Open Hackintool and go to the `Displays` tab and click the Export icon/button on the bottom-right side.
+- On desktop, you will see some new files appeared, now open the `EDID-***-****-orig.bin` file with AWEDIDEditor
+- Go to `Detailed Data` tab and change `H. Sync Width:` value to `100`.
+- Save the EDID as `Patched-EDID` or whatever name you like just to know which one is the patched one
+- Open the `Patched-EDID` with HexFiend and make sure you expand it so it contains 8 columns of code bytes and copy the 128 bytes of it.
+- Add child `AAPL00,override-no-connect` to `EFI>OC>Config.plist>DeviceProperties>PciRoot(0x0)/Pci(0x2,0x0)` and paste the 128 bytes of code in there
+- Save the config.plist file and reboot, Enjoy pure UEFI without a garbled screen.
 
 ## Intel WiFi
 
