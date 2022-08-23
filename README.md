@@ -72,7 +72,7 @@ First we need to download these three Applications: [Hackintool](https://github.
 - Go to `Detailed Data` tab and change `H. Sync Width:` value to `100`.
 - Save the EDID as `Patched-EDID` or whatever name you like just to know which one is the patched one
 - Open the `Patched-EDID` with HexFiend and make sure you expand it so it contains 8 columns of code bytes and copy the 128 bytes of it.
-- Add child `AAPL00,override-no-connect` to `EFI>OC>Config.plist>DeviceProperties>PciRoot(0x0)/Pci(0x2,0x0)` and paste the 128 bytes of code in there
+- Add child `AAPL00,override-no-connect` to `EFI>OC>Config.plist>DeviceProperties>PciRoot(0x0)/Pci(0x2,0x0)` with `Data` as the type and paste the 128 bytes of code in there
 - Save the config.plist file and reboot, Enjoy pure UEFI without a garbled screen.
 
 ## Intel WiFi
