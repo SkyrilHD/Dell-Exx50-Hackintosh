@@ -5,15 +5,10 @@ on:
   release:
     types: [published]
 
-env:
-  PROJECT_TYPE: KEXT
-
 jobs:
   ventura:
     name: Build (Ventura)
     runs-on: macos-latest
-    env:
-      JOB_TYPE: BUILD
     steps:
       - name: Build
         uses: actions/checkout@v3
