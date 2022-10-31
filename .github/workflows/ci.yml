@@ -73,7 +73,7 @@ jobs:
       - run: plutil -replace "Kernel"."Patch".3."Enabled" -bool false OpenCore/EFI/OC/config.plist
       
       # enable AMFI
-      - run: plutil -replace "NVRAM"."Add"."7C436110-AB2A-4BBB-A880-FE41995C9F82"."boot-args" -string "" OpenCore/EFI/OC/config.plist
+      - run: plutil -replace "NVRAM"."Add"."7C436110-AB2A-4BBB-A880-FE41995C9F82"."boot-args" -string "-wegnoegpu" OpenCore/EFI/OC/config.plist
 
       # enable SIP
       - run: plutil -replace "NVRAM"."Add"."7C436110-AB2A-4BBB-A880-FE41995C9F82"."csr-active-config" -data AAAAAA== OpenCore/EFI/OC/config.plist
