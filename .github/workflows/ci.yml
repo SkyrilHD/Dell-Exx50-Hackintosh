@@ -8,8 +8,8 @@ env:
   PROJECT_TYPE: KEXT
 
 jobs:
-  build:
-    name: Build
+  ventura:
+    name: Build (Ventura)
     runs-on: macos-latest
     env:
       JOB_TYPE: BUILD
