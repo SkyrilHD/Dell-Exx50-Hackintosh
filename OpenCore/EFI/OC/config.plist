@@ -538,8 +538,6 @@
 			<dict>
 				<key>AAPL,ig-platform-id</key>
 				<data>BgAmFg==</data>
-				<key>AAPL,slot-name</key>
-				<string>iGPU</string>
 				<key>device_type</key>
 				<string>VGA compatible controller</string>
 				<key>framebuffer-con1-enable</key>
