@@ -96,6 +96,10 @@ Since Monterey, the Bluetooth implementation has changed and therefore causes is
 
 If you want Continuity features: Buy a Broadcom card on eBay or your trusted website. You can check the Dortania buyers guide to see which card is the better option: [Link](https://dortania.github.io/Wireless-Buyers-Guide/)
 
+## OTA from Monterey to Ventura
+
+Since v4.0 installing Ventura via OTA should be very easy. Replace your Monterey EFI with Ventura and boot as usual. Open 'System Preferences' and go to 'Software Update'. Download macOS Ventura and proceed with the installation as a normal update. After update, run OpenCore Legacy Patcher to fix GPU acceleration. Here's a little [guide](#GPU-acceleration-on-Ventura) you can follow. Keep in mind that replacing Monterey EFI with Ventura drops AirportItlwm support on Monterey! If you want to upgrade to Ventura over WiFi, replace the Ventura version of AirportItlwm with a Monterey version. After the update, you need to roll back the Ventura version of AirportItlwm to support WiFi on Ventura.
+
 ## Touchscreen
 
 For touchscreen models, I also added VoodooI2C to take advantage of the touchscreen display. However, it is disabled. If you want to use it, you have to activate all VoodooI2C-related kexts in the config! Since v2.0 there is a new touchpad kext that also uses VoodooInput. So you need to disable VoodooInput that comes with VoodooPS2 and enable VoodooInput that comes with VoodooI2C, otherwise the system will not boot.
