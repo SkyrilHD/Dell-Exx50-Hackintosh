@@ -17,7 +17,15 @@ jobs:
     steps:
       - name: Build
         uses: actions/checkout@v3
-      - run: echo "TAG_VER=${GITHUB_REF/refs\/tags\/v/}" >> $GITHUB_ENV
+
+      - name: TAG_VER (push)
+        if: github.event_name == 'push'
+        run: echo "TAG_VER=13.0" >> $GITHUB_ENV
+      
+      - name: TAG_VER (release)
+        if: github.event_name == 'release'
+        run: echo "TAG_VER=${GITHUB_REF/refs\/tags\/v/}" >> $GITHUB_ENV
+
       - run: mkdir Output && zip --exclude '*.git*' --exclude '*.github*' --exclude '*Output*' -r -X "Output/${{ github.event.repository.name }}-${TAG_VER}.zip" .  
       
       - name: Upload to Artifacts
@@ -41,7 +49,14 @@ jobs:
     steps:
       - name: Build
         uses: actions/checkout@v3
-      - run: echo "TAG_VER=${GITHUB_REF/refs\/tags\/v/}" >> $GITHUB_ENV
+
+      - name: TAG_VER (push)
+        if: github.event_name == 'push'
+        run: echo "TAG_VER=13.0" >> $GITHUB_ENV
+      
+      - name: TAG_VER (release)
+        if: github.event_name == 'release'
+        run: echo "TAG_VER=${GITHUB_REF/refs\/tags\/v/}" >> $GITHUB_ENV
 
       - name: "Download latest AirportItlwm for Monterey"
         uses: robinraju/release-downloader@v1.6
