@@ -50,6 +50,7 @@ Disclaimer: The list was created based on the specs. Please correct my mistakes
 ## What works?
 
 Everything...
+  - Since Ventura: except GPU acceleration [[can be patched]](#GPU-acceleration-on-Ventura)
 
 ## Download and Install
 
