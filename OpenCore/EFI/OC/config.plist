@@ -1432,7 +1432,7 @@
 				<key>SystemAudioVolume</key>
 				<data>EA==</data>
 				<key>boot-args</key>
-				<string>-wegnoegpu</string>
+				<string>-wegnoegpu amfi_get_out_of_my_way=1</string>
 				<key>csr-active-config</key>
 				<data>AwgAAA==</data>
 				<key>prev-lang:kbd</key>
