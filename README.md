@@ -75,6 +75,16 @@ First we need to download these three Applications: [Hackintool](https://github.
 - Add child `AAPL00,override-no-connect` to `EFI>OC>Config.plist>DeviceProperties>PciRoot(0x0)/Pci(0x2,0x0)` with `Data` as the type and paste the 128 bytes of code in there
 - Save the config.plist file and reboot, Enjoy pure UEFI without a garbled screen.
 
+## GPU acceleration on Ventura
+
+Since Apple dropped support for our SMBIOS (MacBookPro12.1) on Ventura, the Broadwell graphic texts have also been removed. This means we need to patch the Broadwell kexts back to Ventura, which means we need to disable SIP. Disabling SIP results in losing the ability to apply Delta OTA updates. The patch must also be reapplied after each macOS update. To add the required kexts back to the system, you should use a tool called OpenCore Legacy Patcher, which has an amazing team that adds back support for older Macs.
+
+- Go to the latest OpenCore Legacy Patcher Release page: [Link](https://github.com/dortania/OpenCore-Legacy-Patcher/releases)
+- Download 'OpenCore-Patcher-GUI.app.zip'
+- After download, open the app and select 'Post Install Root Patch'.
+- Wait for a while and reboot the system after it finishes.
+- Enjoy your E7250 on Ventura :)
+
 ## Intel WiFi
 
 Starting with v2.3, AirportItlwm is included in the EFI but disabled to ensure stability. To enable Intel WiFi, enable it in the config. The EFI will only have stable versions of AirportItlwm. So if you want to experiment with Intel WiFi, you can do so by visiting the [itlwm repo](https://github.com/OpenIntelWireless/itlwm) and downloading the latest alpha build. Stability can be much worse, so use with caution! Also, do not forget to enable IntelBluetoothFirmware and BlueToolFixup in the config to enable Bluetooth on Ventura!
