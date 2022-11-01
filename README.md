@@ -78,7 +78,7 @@ First we need to download these three Applications: [Hackintool](https://github.
 
 ## GPU acceleration on Ventura
 
-Since Apple dropped support for our SMBIOS (MacBookPro12.1) on Ventura, the Broadwell graphic texts have also been removed. This means we need to patch the Broadwell kexts back to Ventura, which means we need to disable SIP. Disabling SIP results in losing the ability to apply Delta OTA updates. The patch must also be reapplied after each macOS update. To add the required kexts back to the system, you should use a tool called OpenCore Legacy Patcher, which has an amazing team that adds back support for older Macs.
+Since Apple dropped support for our SMBIOS (MacBookPro12,1) on Ventura, the Broadwell graphic kexts have also been removed. This means we need to patch the Broadwell kexts back to Ventura, which means we need to disable SIP. Disabling SIP results in losing the ability to apply Delta OTA updates. The patch must also be reapplied after each macOS update. To add the required kexts back to the system, you should use a tool called OpenCore Legacy Patcher, which has an amazing team that adds back support for older Macs.
 
 - Go to the latest OpenCore Legacy Patcher Release page: [Link](https://github.com/dortania/OpenCore-Legacy-Patcher/releases)
 - Download 'OpenCore-Patcher-GUI.app.zip'
