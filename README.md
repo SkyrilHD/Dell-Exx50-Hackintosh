@@ -94,6 +94,8 @@ If you experience no internet with AirportItlwm, I suggest switching to itlwm an
 
 Since Monterey, the Bluetooth implementation has changed and therefore causes issues such as: Bluetooth will be broken after sleep. As a workaround, typing the following command in Terminal may fix this issue: `sudo killall -9 bluetoothd BlueTool`
 
+Users on Ventura: You may have an issue with IntelBTPatcher that causes kernel panics or shutdown/reboot issues. In this case, disable IntelBTPatcher to fix the issue until it is fixed.
+
 If you want Continuity features: Buy a Broadcom card on eBay or your trusted website. You can check the Dortania buyers guide to see which card is the better option: [Link](https://dortania.github.io/Wireless-Buyers-Guide/)
 
 ## OTA from Monterey to Ventura
