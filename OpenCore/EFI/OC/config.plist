@@ -1458,6 +1458,8 @@
 			</dict>
 			<key>4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102</key>
 			<dict>
+				<key>OCLP-Settings</key>
+				<string> -allow_fv -allow_amfi</string>
 				<key>rtc-blacklist</key>
 				<data></data>
 			</dict>
