@@ -62,7 +62,7 @@ jobs:
       # replace Ventura AirportItlwm with Monterey
       - run: rm -rf OpenCore/EFI/OC/Kexts/AirportItlwm.kext
       - run: unzip *_Monterey.kext.zip
-      - run: mv Monterey/AirportItlwm.kext OpenCore/EFI/OC/Kexts/
+      - run: mv AirportItlwm.kext OpenCore/EFI/OC/Kexts/
 
       # disable Ventura specific patches
       - run: plutil -replace "Booter"."Patch".1."Enabled" -bool false OpenCore/EFI/OC/config.plist
