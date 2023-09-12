@@ -1,6 +1,6 @@
 # Dell Exx50 Hackintosh
 
-[![OpenCore Version](https://img.shields.io/badge/OpenCore-0.9.0-green.svg)](https://github.com/SkyrilHD/Dell-Exx50-Hackintosh/)
+[![OpenCore Version](https://img.shields.io/badge/OpenCore-0.9.5-green.svg)](https://github.com/SkyrilHD/Dell-Exx50-Hackintosh/)
 [![GitHub release](https://img.shields.io/github/tag/SkyrilHD/Dell-Exx50-Hackintosh.svg)](https://github.com/SkyrilHD/Dell-Exx50-Hackintosh/releases/)
 [![GitHub issues](https://img.shields.io/github/issues/SkyrilHD/Dell-Exx50-Hackintosh.svg)](https://github.com/SkyrilHD/Dell-Exx50-Hackintosh/issues/)
 
