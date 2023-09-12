@@ -66,7 +66,8 @@ jobs:
 
       # disable Ventura specific patches
       - run: plutil -replace "Booter"."Patch".1."Enabled" -bool false OpenCore/EFI/OC/config.plist
-      - run: plutil -replace "Booter"."Patch".2."Enabled" -bool false OpenCore/EFI/OC/config.plist
+      - run: plutil -replace "Kernel"."Add".17."Enabled" -bool false OpenCore/EFI/OC/config.plist
+      - run: plutil -replace "Kernel"."Add".18."Enabled" -bool false OpenCore/EFI/OC/config.plist
       - run: plutil -replace "Kernel"."Patch".0."Enabled" -bool false OpenCore/EFI/OC/config.plist
       - run: plutil -replace "Kernel"."Patch".1."Enabled" -bool false OpenCore/EFI/OC/config.plist
       - run: plutil -replace "Kernel"."Patch".2."Enabled" -bool false OpenCore/EFI/OC/config.plist
@@ -75,7 +76,7 @@ jobs:
       # enable AMFI
       - run: plutil -replace "NVRAM"."Add"."7C436110-AB2A-4BBB-A880-FE41995C9F82"."boot-args" -string "-wegnoegpu" OpenCore/EFI/OC/config.plist
 
-      # enable SIP
+      # remove Ventura specific boot-args
       - run: plutil -replace "NVRAM"."Add"."7C436110-AB2A-4BBB-A880-FE41995C9F82"."csr-active-config" -data AAAAAA== OpenCore/EFI/OC/config.plist
 
       - run: mkdir Output && zip --exclude '*.git*' --exclude '*.github*' --exclude '*Output*' --exclude '*Monterey*' -r -X "Output/${{ github.event.repository.name }}-${TAG_VER} (Monterey).zip" .
