@@ -1162,7 +1162,7 @@
 				<key>Base</key>
 				<string></string>
 				<key>Comment</key>
-				<string>Reroute kern.hv_vmm_present patch (2) Monterey</string>
+				<string>Reroute kern.hv_vmm_present patch (2) Legacy</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
