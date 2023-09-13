@@ -446,17 +446,6 @@
 				<key>backlight-smoother-threshold</key>
 				<data>AAAAAA==</data>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x3,0x0)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Built-in</string>
-				<key>compatible</key>
-				<string>pci8086,160c</string>
-				<key>device_type</key>
-				<string>Audio Device</string>
-				<key>model</key>
-				<string>Broadwell-U Audio Controller</string>
-			</dict>
 			<key>PciRoot(0x0)/Pci(0x4,0x0)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
