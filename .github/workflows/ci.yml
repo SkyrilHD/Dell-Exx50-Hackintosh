@@ -58,12 +58,12 @@ jobs:
 
       # disable Sonoma specific patches
       - run: plutil -replace "Booter"."Patch".1."Enabled" -bool false OpenCore/EFI/OC/config.plist
+      - run: plutil -replace "Kernel"."Add".16."Enabled" -bool false OpenCore/EFI/OC/config.plist
       - run: plutil -replace "Kernel"."Add".17."Enabled" -bool false OpenCore/EFI/OC/config.plist
       - run: plutil -replace "Kernel"."Add".18."Enabled" -bool false OpenCore/EFI/OC/config.plist
+      - run: plutil -replace "Kernel"."Add".19."Enabled" -bool false OpenCore/EFI/OC/config.plist
       - run: plutil -replace "Kernel"."Patch".0."Enabled" -bool false OpenCore/EFI/OC/config.plist
       - run: plutil -replace "Kernel"."Patch".1."Enabled" -bool false OpenCore/EFI/OC/config.plist
-      - run: plutil -replace "Kernel"."Patch".2."Enabled" -bool false OpenCore/EFI/OC/config.plist
-      - run: plutil -replace "Kernel"."Patch".3."Enabled" -bool false OpenCore/EFI/OC/config.plist
       
       # remove Sonoma specific boot-args
       - run: plutil -replace "NVRAM"."Add"."7C436110-AB2A-4BBB-A880-FE41995C9F82"."boot-args" -string "-wegnoegpu" OpenCore/EFI/OC/config.plist
