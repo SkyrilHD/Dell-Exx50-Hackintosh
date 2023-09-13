@@ -423,17 +423,6 @@
 				<key>compatible</key>
 				<string>pci14e4,16bc</string>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x1F,0x2)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Built-in</string>
-				<key>compatible</key>
-				<string>pci8086,9c83</string>
-				<key>device_type</key>
-				<string>SATA Controller</string>
-				<key>model</key>
-				<string>Wildcat Point-LP SATA Controller [AHCI Mode]</string>
-			</dict>
 			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
