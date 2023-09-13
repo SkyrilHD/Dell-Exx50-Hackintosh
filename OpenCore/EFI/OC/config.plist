@@ -415,12 +415,8 @@
 		<dict>
 			<key>PciRoot(0x0)/Pci(0x1B,0x0)</key>
 			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Built-in</string>
 				<key>layout-id</key>
 				<data>CwAAAA==</data>
-				<key>model</key>
-				<string>Realtek ALC293 High-Definition Audio</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1C,0x0)/Pci(0x0,0x0)</key>
 			<dict>
