@@ -4,7 +4,7 @@
 [![GitHub release](https://img.shields.io/github/tag/SkyrilHD/Dell-Exx50-Hackintosh.svg)](https://github.com/SkyrilHD/Dell-Exx50-Hackintosh/releases/)
 [![GitHub issues](https://img.shields.io/github/issues/SkyrilHD/Dell-Exx50-Hackintosh.svg)](https://github.com/SkyrilHD/Dell-Exx50-Hackintosh/issues/)
 
-### This repo contains all the fixes for Exx50 on macOS Ventura.
+### This repo contains all the fixes for Exx50 on macOS Sonoma.
 
 ### I need a [confirmation](https://github.com/SkyrilHD/Dell-Exx50-Hackintosh/discussions/2) if the EFI is working on other models, so I can complete my list. Thanks!
 
@@ -20,7 +20,7 @@ RAM | 16GB DDR3 1600Mhz
 Storage | SK hynix SC210 mSATA 128GB
 WiFi | Intel Dual Band Wireless-AC 7265
 GSM/LTE | Sierra Wireless AirPrime EM7305 (DW5809e)
-Software | macOS 13.0 Ventura
+Software | macOS 14.0 Sonoma
 
 ## EFI Compatibility list
 
@@ -50,7 +50,7 @@ Disclaimer: The list was created based on the specs. Please correct my mistakes
 ## What works?
 
 Everything...
-  - Since Ventura: except GPU acceleration [[can be patched]](#GPU-acceleration-on-Ventura)
+  - Since Ventura: except GPU acceleration [[can be patched]](#GPU-acceleration-on-Ventura-and-newer)
 
 ## Download and Install
 
@@ -76,31 +76,29 @@ First we need to download these three Applications: [Hackintool](https://github.
 - Add child `AAPL00,override-no-connect` to `EFI>OC>Config.plist>DeviceProperties>PciRoot(0x0)/Pci(0x2,0x0)` with `Data` as the type and paste the 128 bytes of code in there
 - Save the config.plist file and reboot, Enjoy pure UEFI without a garbled screen.
 
-## GPU acceleration on Ventura
+## GPU acceleration on Ventura and newer
 
-Since Apple dropped support for our SMBIOS (MacBookPro12,1) on Ventura, the Broadwell graphic kexts have also been removed. This means we need to patch the Broadwell kexts back to Ventura, which means we need to disable SIP. Disabling SIP results in losing the ability to apply Delta OTA updates. The patch must also be reapplied after each macOS update. To add the required kexts back to the system, you should use a tool called OpenCore Legacy Patcher, which has an amazing team that adds back support for older Macs.
+Since Apple dropped support for our SMBIOS (MacBookPro12,1) on Ventura and newer, the Broadwell graphic kexts have also been removed. This means we need to patch the Broadwell kexts back to Ventura and newer, which means we need to disable SIP. Disabling SIP results in losing the ability to apply Delta OTA updates. The patch must also be reapplied after each macOS update. To add the required kexts back to the system, you should use a tool called OpenCore Legacy Patcher, which has an amazing team that adds back support for older Macs.
 
 - Go to the latest OpenCore Legacy Patcher Release page: [Link](https://github.com/dortania/OpenCore-Legacy-Patcher/releases)
 - Download 'OpenCore-Patcher-GUI.app.zip'
 - After download, open the app and select 'Post Install Root Patch'.
 - Wait for a while and reboot the system after it finishes.
-- Enjoy your E7250 on Ventura :)
+- Enjoy your E7250 on Sonoma :)
 
 ## Intel WiFi
 
-Starting with v2.3, AirportItlwm is included in the EFI but disabled to ensure stability. To enable Intel WiFi, enable it in the config. The EFI will only have stable versions of AirportItlwm. So if you want to experiment with Intel WiFi, you can do so by visiting the [itlwm repo](https://github.com/OpenIntelWireless/itlwm) and downloading the latest alpha build. Stability can be much worse, so use with caution! Also, do not forget to enable IntelBluetoothFirmware, BlueToolFixup and IntelBTPatcher in the config to enable Bluetooth on Ventura!
+Starting with v2.3, AirportItlwm is included in the EFI but disabled to ensure stability. To enable Intel WiFi, enable it in the config. The EFI will only have stable versions of AirportItlwm. So if you want to experiment with Intel WiFi, you can do so by visiting the [itlwm repo](https://github.com/OpenIntelWireless/itlwm) and downloading the latest alpha build. Stability can be much worse, so use with caution! Also, do not forget to enable IntelBluetoothFirmware, BlueToolFixup and IntelBTPatcher in the config to enable Bluetooth!
 
 If you experience no internet with AirportItlwm, I suggest switching to itlwm and see if it works there.
 
 Since Monterey, the Bluetooth implementation has changed and therefore causes issues such as: Bluetooth will be broken after sleep. As a workaround, typing the following command in Terminal may fix this issue: `sudo killall -9 bluetoothd BlueTool`
 
-Users on Ventura: You may have an issue with IntelBTPatcher that causes kernel panics or shutdown/reboot issues. In this case, disable IntelBTPatcher to fix the issue until it is fixed.
-
 If you want Continuity features: Buy a Broadcom card on eBay or your trusted website. You can check the Dortania buyers guide to see which card is the better option: [Link](https://dortania.github.io/Wireless-Buyers-Guide/)
 
-## OTA from Monterey to Ventura
+## OTA from Monterey to Sonoma
 
-Since v4.0 installing Ventura via OTA should be very easy. Replace your Monterey EFI with Ventura and boot as usual. Open 'System Preferences' and go to 'Software Update'. Download macOS Ventura and proceed with the installation as a normal update. After update, run OpenCore Legacy Patcher to fix GPU acceleration. Here's a little [guide](#GPU-acceleration-on-Ventura) you can follow. Keep in mind that replacing Monterey EFI with Ventura drops AirportItlwm support on Monterey! If you want to upgrade to Ventura over WiFi, replace the Ventura version of AirportItlwm with a Monterey version. After the update, you need to roll back the Ventura version of AirportItlwm to support WiFi on Ventura.
+Since v5.0 installing Sonoma via OTA should be very easy. Replace your Monterey EFI with Sonoma and boot as usual. Open 'System Preferences' and go to 'Software Update'. Download macOS Sonoma and proceed with the installation as a normal update. After update, run OpenCore Legacy Patcher to fix GPU acceleration. Here's a little [guide](#GPU-acceleration-on-Ventura-and-newer) you can follow. Keep in mind that replacing Monterey EFI with Sonoma drops AirportItlwm support on Monterey! If you want to upgrade to Sonoma over WiFi, replace the Sonoma version of AirportItlwm with a Monterey version. After the update, you need to roll back the currently version of AirportItlwm to add WiFi support on Sonoma. The same applies to Ventura.
 
 ## Touchscreen
 
@@ -139,19 +137,19 @@ If you experience a USB port not working or you have issues with it, the result 
 
 </details>
 
-## How to Install macOS Ventura
+## How to Install macOS Sonoma
 
-There are two ways you can install Ventura:
+There are two ways you can install Sonoma:
 
 1. If you have an already working macOS, download the Installer from the App Store and make a bootable Installer with `createinstallmedia` by using this command in Terminal: `sudo /Applications/Install\ macOS\ Ventura.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume`
 
 2. If you are using Windows, use [macrecovery.py](https://github.com/acidanthera/OpenCorePkg/tree/master/Utilities/macrecovery) from the offical [OpenCore release package](https://github.com/acidanthera/OpenCorePkg/releases/). Follow this [guide](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/windows-install.html) to understand how it works.
 
-After you have created a bootable Installer, copy the EFI folder to the EFI partition and install as usual. After the installation, mount the EFI partition of the installed OS and copy the EFI folder to its partition.
+After you have created a bootable Installer, mount the EFI partition of the USB thumb drive and copy the EFI folder to the EFI partition. You can then proceed with the installation as usual. After the installation, mount the EFI partition of the installed OS and copy the EFI folder to its partition.
 
 ## Screenshot
 
-![About this Mac](https://user-images.githubusercontent.com/28839925/198919984-5ba0e437-6ba3-4696-9f17-171519820af3.png)
+![About this Mac](https://github.com/SkyrilHD/Dell-E7250-Hackintosh/assets/28839925/5e258c9a-4c3a-490e-899e-fe45bb682d4a)
 
 
 ## Credits
@@ -160,13 +158,13 @@ Thanks to:
 
 - me (for wasting my time writing this and providing fixes)
 - acidanthera (for making an awesome bootloader)
-- adyrosebrigg (for help and testing USB and dimmed screen on Windows)
+- adyrosebrigg (for helping and testing USB issues and dimmed screen on Windows)
 - dortania (with their troubleshooting guide, I was able to fix sleep and root patches for GPU acceleration)
 - DrHurt (for supporting our ALPS Trackpad)
 - emrah7celik (for providing a guide on how to fix the glitches in macOS with pure UEFI)
 - Harvé (for suggesting to inject property in Clover)
-- hickorysb (for confirming the fix for glitches with Legacy Option ROMs)
+- hickorysb (for confirming the fix of glitches with Legacy Option ROMs)
 - zxystd (for fixing the Bluetooth issue and Intel WiFi card)
 
 
-All this was written on an E7250 with Ventura installed :D
+All this was written on an E7250 with Sonoma installed :D
