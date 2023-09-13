@@ -1460,7 +1460,7 @@
 				<key>SystemAudioVolume</key>
 				<data>EA==</data>
 				<key>boot-args</key>
-				<string>-wegnoegpu ipc_control_port_options=0 -nokcmismatchpanic</string>
+				<string>-wegnoegpu ipc_control_port_options=0 -nokcmismatchpanic amfi=0x80</string>
 				<key>csr-active-config</key>
 				<data>AwgAAA==</data>
 				<key>prev-lang:kbd</key>
