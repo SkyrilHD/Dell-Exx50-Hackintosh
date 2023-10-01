@@ -5,7 +5,7 @@ on:
     types: [published]
 
 jobs:
-  ventura:
+  sonoma:
     name: Build (Sonoma)
     runs-on: macos-latest
     steps:
@@ -51,7 +51,7 @@ jobs:
           latest: true
           fileName: "*_Monterey.kext.zip"
 
-      # replace Ventura AirportItlwm with Monterey
+      # replace Sonoma AirportItlwm with Monterey
       - run: rm -rf OpenCore/EFI/OC/Kexts/AirportItlwm.kext
       - run: unzip *_Monterey.kext.zip
       - run: mv AirportItlwm.kext OpenCore/EFI/OC/Kexts/
