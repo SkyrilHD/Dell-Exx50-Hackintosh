@@ -74,11 +74,11 @@ First we need to download these three Applications: [Hackintool](https://github.
 - Save the EDID as `Patched-EDID` or whatever name you like just to know which one is the patched one
 - Open the `Patched-EDID` with HexFiend and make sure you expand it so it contains 8 columns of code bytes and copy the 128 bytes of it.
 - Add child `AAPL00,override-no-connect` to `EFI>OC>Config.plist>DeviceProperties>PciRoot(0x0)/Pci(0x2,0x0)` with `Data` as the type and paste the 128 bytes of code in there
-- Save the config.plist file and reboot, Enjoy pure UEFI without a garbled screen.
+- Save the config.plist file, reboot and enjoy pure UEFI without a garbled screen.
 
 ## GPU acceleration on Ventura and newer
 
-Since Apple dropped support for our SMBIOS (MacBookPro12,1) on Ventura and newer, the Broadwell graphic kexts have also been removed. This means we need to patch the Broadwell kexts back to Ventura and newer, which means we need to disable SIP. Disabling SIP results in losing the ability to apply Delta OTA updates. The patch must also be reapplied after each macOS update. To add the required kexts back to the system, you should use a tool called OpenCore Legacy Patcher, which has an amazing team that adds back support for older Macs.
+With Apple dropping support for all pre-Kaby Lake machines on Ventura and newer, graphics support for Broadwell and other previously supported GPUs has been removed as well. To restore GPU acceleration, we have to both weaken SIP and modify the root volume. Modifying the root volume results in losing the ability to apply Delta OTA updates. The root patches must be re-applied after each macOS update. To add the required kexts back to the system, use a tool called OpenCore Legacy Patcher, which has an amazing team that adds back support for older Macs.
 
 - Go to the latest OpenCore Legacy Patcher Release page: [Link](https://github.com/dortania/OpenCore-Legacy-Patcher/releases)
 - Download 'OpenCore-Patcher-GUI.app.zip'
