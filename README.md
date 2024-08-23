@@ -100,6 +100,12 @@ If you want Continuity features: Buy a Broadcom card on eBay or your trusted web
 
 Since v5.0 installing Sonoma via OTA should be very easy. Replace your Monterey EFI with Sonoma and boot as usual. Open 'System Preferences' and go to 'Software Update'. Download macOS Sonoma and proceed with the installation as a normal update. After update, run OpenCore Legacy Patcher to fix GPU acceleration. Here's a little [guide](#GPU-acceleration-on-Ventura-and-newer) you can follow. Keep in mind that replacing Monterey EFI with Sonoma drops AirportItlwm support on Monterey! If you want to upgrade to Sonoma over WiFi, replace the Sonoma version of AirportItlwm with a Monterey version. After the update, you need to roll back the currently version of AirportItlwm to add WiFi support on Sonoma. The same applies to Ventura.
 
+## Permission Issues with Applications
+
+Using `amfi=0x80` on macOS may prevent some permission prompts from appearing when launching applications. To fix this, you can use TCCPlus to manage permissions.
+
+For more details, check here: [Link](https://dortania.github.io/OpenCore-Legacy-Patcher/ACCEL.html#unable-to-grant-special-permissions-to-apps-ie-camera-access-to-zoom)
+
 ## Touchscreen
 
 For touchscreen models, I also added VoodooI2C to take advantage of the touchscreen display. However, it is disabled. If you want to use it, you have to activate all VoodooI2C-related kexts in the config! Since v2.0 there is a new touchpad kext that also uses VoodooInput. So you need to disable VoodooInput that comes with VoodooPS2 and enable VoodooInput that comes with VoodooI2C, otherwise the system will not boot.
