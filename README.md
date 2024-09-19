@@ -155,7 +155,7 @@ After you have created a bootable Installer, mount the EFI partition of the USB 
 
 ## Screenshot
 
-![About this Mac](https://github.com/SkyrilHD/Dell-E7250-Hackintosh/assets/28839925/5e258c9a-4c3a-490e-899e-fe45bb682d4a)
+![About this Mac](https://github.com/user-attachments/assets/ab0162ba-6fd0-4382-925b-0c0a136c6149)
 
 
 ## Credits
