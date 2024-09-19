@@ -4,7 +4,7 @@
 [![GitHub release](https://img.shields.io/github/tag/SkyrilHD/Dell-Exx50-Hackintosh.svg)](https://github.com/SkyrilHD/Dell-Exx50-Hackintosh/releases/)
 [![GitHub issues](https://img.shields.io/github/issues/SkyrilHD/Dell-Exx50-Hackintosh.svg)](https://github.com/SkyrilHD/Dell-Exx50-Hackintosh/issues/)
 
-### This repo contains all the fixes for Exx50 on macOS Sonoma.
+### This repo contains all the fixes for Exx50 on macOS Sequoia.
 
 ### I need a [confirmation](https://github.com/SkyrilHD/Dell-Exx50-Hackintosh/discussions/2) if the EFI is working on other models, so I can complete my list. Thanks!
 
@@ -20,7 +20,7 @@ RAM | 16GB DDR3 1600Mhz
 Storage | SK hynix SC210 mSATA 128GB
 WiFi | Intel Dual Band Wireless-AC 7265
 GSM/LTE | Sierra Wireless AirPrime EM7305 (DW5809e)
-Software | macOS 14.0 Sonoma
+Software | macOS 14.0 Sequoia
 
 ## EFI Compatibility list
 
@@ -84,7 +84,7 @@ With Apple dropping support for all pre-Kaby Lake machines on Ventura and newer,
 - Download 'OpenCore-Patcher-GUI.app.zip'
 - After download, open the app and select 'Post Install Root Patch'.
 - Wait for a while and reboot the system after it finishes.
-- Enjoy your E7250 on Sonoma :)
+- Enjoy your E7250 on Sequoia :)
 
 ## Intel WiFi
 
@@ -96,9 +96,9 @@ Since Monterey, the Bluetooth implementation has changed and therefore causes is
 
 If you want Continuity features: Buy a Broadcom card on eBay or your trusted website. You can check the Dortania buyers guide to see which card is the better option: [Link](https://dortania.github.io/Wireless-Buyers-Guide/)
 
-## OTA from Monterey to Sonoma
+## OTA from Monterey to Sequoia
 
-Since v5.0 installing Sonoma via OTA should be very easy. Replace your Monterey EFI with Sonoma and boot as usual. Open 'System Preferences' and go to 'Software Update'. Download macOS Sonoma and proceed with the installation as a normal update. After update, run OpenCore Legacy Patcher to fix GPU acceleration. Here's a little [guide](#GPU-acceleration-on-Ventura-and-newer) you can follow. Keep in mind that replacing Monterey EFI with Sonoma drops AirportItlwm support on Monterey! If you want to upgrade to Sonoma over WiFi, replace the Sonoma version of AirportItlwm with a Monterey version. After the update, you need to roll back the currently version of AirportItlwm to add WiFi support on Sonoma. The same applies to Ventura.
+Since v5.0 installing Sequoia via OTA should be very easy. Replace your Monterey EFI with Sequoia and boot as usual. Open 'System Preferences' and go to 'Software Update'. Download macOS Sequoia and proceed with the installation as a normal update. After update, run OpenCore Legacy Patcher to fix GPU acceleration. Here's a little [guide](#GPU-acceleration-on-Ventura-and-newer) you can follow. Keep in mind that replacing Monterey EFI with Sequoia drops AirportItlwm support on Monterey! If you want to upgrade to Sequoia over WiFi, replace the Sequoia version of AirportItlwm with a Monterey version. After the update, you need to roll back the currently version of AirportItlwm to add WiFi support on Sequoia. The same applies to Ventura.
 
 ## Permission Issues with Applications
 
@@ -143,11 +143,11 @@ If you experience a USB port not working or you have issues with it, the result 
 
 </details>
 
-## How to Install macOS Sonoma
+## How to Install macOS Sequoia
 
-There are two ways you can install Sonoma:
+There are two ways you can install Sequoia:
 
-1. If you have an already working macOS, download the Installer from the App Store and make a bootable Installer with `createinstallmedia` by using this command in Terminal: `sudo /Applications/Install\ macOS\ Ventura.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume`
+1. If you have an already working macOS, download the Installer from the App Store and make a bootable Installer with `createinstallmedia` by using this command in Terminal: `sudo /Applications/Install\ macOS\ Sequoia.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume`
 
 2. If you are using Windows, use [macrecovery.py](https://github.com/acidanthera/OpenCorePkg/tree/master/Utilities/macrecovery) from the offical [OpenCore release package](https://github.com/acidanthera/OpenCorePkg/releases/). Follow this [guide](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/windows-install.html) to understand how it works.
 
@@ -171,6 +171,3 @@ Thanks to:
 - Harvé (for suggesting to inject property in Clover)
 - hickorysb (for confirming the fix of glitches with Legacy Option ROMs)
 - zxystd (for fixing the Bluetooth issue and Intel WiFi card)
-
-
-All this was written on an E7250 with Sonoma installed :D
