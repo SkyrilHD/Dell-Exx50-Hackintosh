@@ -5,8 +5,8 @@ on:
     types: [published]
 
 jobs:
-  sonoma:
-    name: Build (Sonoma)
+  sequoia:
+    name: Build (Sequoia)
     runs-on: macos-latest
     steps:
       - name: Build
@@ -16,7 +16,7 @@ jobs:
         if: github.event_name == 'release'
         run: echo "TAG_VER=${GITHUB_REF/refs\/tags\/v/}" >> $GITHUB_ENV
 
-      - run: mkdir Output && zip --exclude '*.git*' --exclude '*.github*' --exclude '*Output*' -r -X "Output/${{ github.event.repository.name }}-${TAG_VER} (Sonoma).zip" .  
+      - run: mkdir Output && zip --exclude '*.git*' --exclude '*.github*' --exclude '*Output*' -r -X "Output/${{ github.event.repository.name }}-${TAG_VER} (Sequoia).zip" .  
       
       - name: Upload to Artifacts
         uses: actions/upload-artifact@v3
@@ -51,12 +51,12 @@ jobs:
           latest: true
           fileName: "*_Monterey.kext.zip"
 
-      # replace Sonoma AirportItlwm with Monterey
+      # replace Sequoia AirportItlwm with Monterey
       - run: rm -rf OpenCore/EFI/OC/Kexts/AirportItlwm.kext
       - run: unzip *_Monterey.kext.zip
       - run: mv AirportItlwm.kext OpenCore/EFI/OC/Kexts/
 
-      # disable Sonoma specific patches
+      # disable Sequoia specific patches
       - run: plutil -replace "Booter"."Patch".1."Enabled" -bool false OpenCore/EFI/OC/config.plist
       - run: plutil -replace "Kernel"."Add".16."Enabled" -bool false OpenCore/EFI/OC/config.plist
       - run: plutil -replace "Kernel"."Add".17."Enabled" -bool false OpenCore/EFI/OC/config.plist
@@ -65,7 +65,7 @@ jobs:
       - run: plutil -replace "Kernel"."Patch".0."Enabled" -bool false OpenCore/EFI/OC/config.plist
       - run: plutil -replace "Kernel"."Patch".1."Enabled" -bool false OpenCore/EFI/OC/config.plist
       
-      # remove Sonoma specific boot-args
+      # remove Sequoia specific boot-args
       - run: plutil -replace "NVRAM"."Add"."7C436110-AB2A-4BBB-A880-FE41995C9F82"."boot-args" -string "-wegnoegpu" OpenCore/EFI/OC/config.plist
 
       # remove Ventura specific boot-args
